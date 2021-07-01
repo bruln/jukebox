@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class FrontedConfig(AppConfig):
+class FrontendConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'fronted'
+    name = 'frontend'
