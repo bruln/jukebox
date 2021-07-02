@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
+import HomePage from './HomePage';
+import RoomJoin from './RoomJoin';
+import CreateRoom from './CreateRoom';
 import { render } from 'react-dom';
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>Hello</h1>
-      </div>
-    );
-  }
+function App(props) {
+  return (
+    <div>
+      <HomePage />
+    </div>
+  );
 }
+
+export default App;
 
 const appDiv = document.getElementById('app');
 render(<App />, appDiv);
